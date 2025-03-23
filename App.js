@@ -1,20 +1,40 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import ClockScreen from './src/components/ClockScreen';
+import AlarmScreen from './src/components/AlarmScreen';
+import StopwatchScreen from './src/components/StopwatchScreen';
+import TimerScreen from './src/components/TimerScreen';
+
+const TopTab = createMaterialTopTabNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <TopTab.Navigator
+        initialRouteName="Clock"
+        tabBarPosition="top"
+        screenOptions={{
+          swipeEnabled: true,
+          tabBarActiveTintColor: '#FF4081',
+          tabBarInactiveTintColor: '#999999',
+          tabBarIndicatorStyle: {
+            backgroundColor: '#FF4081',
+          },
+          tabBarLabelStyle: {
+            fontSize: 14,
+            fontWeight: 'bold',
+          },
+          tabBarStyle: {
+            backgroundColor: '#FFFFFF', // Màu nền của thanh tab
+          },
+        }}
+      >
+        <TopTab.Screen name="Clock" component={ClockScreen} />
+        <TopTab.Screen name="Alarm" component={AlarmScreen} />
+        <TopTab.Screen name="Stopwatch" component={StopwatchScreen} />
+        <TopTab.Screen name="Timer" component={TimerScreen} />
+      </TopTab.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
