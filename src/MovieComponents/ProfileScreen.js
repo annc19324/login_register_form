@@ -35,7 +35,7 @@ const DetailScreen = ({ route }) => {
 
                 // Tính thời gian đã trôi qua
                 const elapsedTime = Date.now() - startTime;
-                const remainingTime = Math.max(3000 - elapsedTime, 0); // Đảm bảo ít nhất 3 giây
+                const remainingTime = Math.max(1500 - elapsedTime, 0);
 
                 // Đợi thêm thời gian còn lại (nếu có)
                 setTimeout(() => {

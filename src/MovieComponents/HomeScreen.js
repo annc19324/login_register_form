@@ -22,17 +22,17 @@ const ListScreen = ({ navigation }) => {
 
     // Lấy danh sách phim khi màn hình được tải
     useEffect(() => {
-        const startTime = Date.now(); // Lấy thời gian bắt đầu
+        const startTime = Date.now();
 
         // Hàm fetch dữ liệu
         const fetchData = async () => {
             try {
-                const movies = await search('Dragon Ball');  // Thực hiện tìm kiếm phim
+                const movies = await search('Dragon Ball');
                 setMovies(movies);
 
                 // Tính thời gian đã trôi qua
                 const elapsedTime = Date.now() - startTime;
-                const remainingTime = Math.max(3000 - elapsedTime, 0); // Đảm bảo ít nhất 5 giây
+                const remainingTime = Math.max(1500 - elapsedTime, 0);
 
                 // Đợi thêm thời gian còn lại (nếu có)
                 setTimeout(() => {

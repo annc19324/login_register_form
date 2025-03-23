@@ -24,7 +24,6 @@ export default function LoginScreen() {
 
     return (
         <View style={styles.container}>
-            {/* Header */}
             <View style={styles.header}>
                 <Image
                     source={require('../assets/arrow.png')}
@@ -33,15 +32,11 @@ export default function LoginScreen() {
                 <Text style={styles.title}>Sign In</Text>
             </View>
 
-            {/* Main Content */}
             <View style={styles.mainContent}>
-                {/* Welcome Text */}
                 <Text style={styles.welcomeText}>Welcome to</Text>
 
-                {/* Subtitle */}
                 <Text style={styles.subtitle}>Enter your Phone number or Email address for sign in. Enjoy your food.</Text>
 
-                {/* Username Input */}
                 <View style={styles.inputContainer}>
                     <Image
                         source={require('../assets/user.png')}
@@ -50,7 +45,6 @@ export default function LoginScreen() {
                     <TextInput style={styles.input} placeholder="Username" />
                 </View>
 
-                {/* Password Input */}
                 <View style={styles.inputContainer}>
                     <Image
                         source={require('../assets/password.png')}
@@ -69,7 +63,6 @@ export default function LoginScreen() {
                     </TouchableOpacity>
                 </View>
 
-                {/* Remember Me and Forgot Password */}
                 <View style={styles.rememberContainer}>
                     <View style={styles.rememberMe}>
                         <Switch onValueChange={toggleSwitch} value={rememberMe} />
@@ -80,22 +73,18 @@ export default function LoginScreen() {
                     </TouchableOpacity>
                 </View>
 
-                {/* Sign In button */}
                 <TouchableOpacity
                     style={styles.button}
                     onPress={handleSignIn}>
                     <Text style={styles.buttonText}>Sign In</Text>
                 </TouchableOpacity>
 
-                {/* Signup text */}
                 <Text style={styles.signupText}>
                     Don't have an account? <Text style={styles.signupLink}>Signup</Text>
                 </Text>
 
-                {/* OR section */}
                 <Text style={styles.orText}>OR</Text>
 
-                {/* Social buttons */}
                 <TouchableOpacity style={styles.socialButtonFacebook}>
                     <View style={styles.iconContainerFacebook}>
                         <Image

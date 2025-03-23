@@ -10,7 +10,6 @@ export default function RegisterScreen() {
 
     return (
         <View style={styles.container}>
-            {/* Header */}
             <View style={styles.header}>
                 <Image
                     source={require('../assets/arrow.png')}
@@ -19,15 +18,11 @@ export default function RegisterScreen() {
                 <Text style={styles.title}>Sign Up</Text>
             </View>
 
-            {/* Main Content */}
             <View style={styles.mainContent}>
-                {/* Welcome Text */}
                 <Text style={styles.welcomeText}>Create Account</Text>
 
-                {/* Subtitle */}
                 <Text style={styles.subtitle}>Enter your Name, Email and password for sign up. Already have account?</Text>
 
-                {/* Username Input */}
                 <View style={styles.inputContainer}>
                     <Image
                         source={require('../assets/user.png')}
@@ -36,7 +31,6 @@ export default function RegisterScreen() {
                     <TextInput style={styles.input} placeholder="Username" />
                 </View>
 
-                {/* Email Input */}
                 <View style={styles.inputContainer}>
                     <Image
                         source={require('../assets/email.png')}
@@ -45,7 +39,6 @@ export default function RegisterScreen() {
                     <TextInput style={styles.input} placeholder="Email address" />
                 </View>
 
-                {/* Password Input */}
                 <View style={styles.inputContainer}>
                     <Image
                         source={require('../assets/password.png')}
@@ -64,7 +57,6 @@ export default function RegisterScreen() {
                     </TouchableOpacity>
                 </View>
 
-                {/* Remember Me and Forgot Password */}
                 <View style={styles.rememberContainer}>
                     <View style={styles.rememberMe}>
                         <Switch onValueChange={toggleSwitch} value={rememberMe} />
@@ -75,15 +67,12 @@ export default function RegisterScreen() {
                     </TouchableOpacity>
                 </View>
 
-                {/* Sign Up button */}
                 <TouchableOpacity style={styles.button}>
                     <Text style={styles.buttonText}>Create Account</Text>
                 </TouchableOpacity>
 
-                {/* OR section */}
                 <Text style={styles.orText}>OR</Text>
 
-                {/* Social buttons */}
                 <TouchableOpacity style={styles.socialButtonFacebook}>
                     <View style={styles.iconContainerFacebook}>
                         <Image
