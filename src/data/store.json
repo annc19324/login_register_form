@@ -1,0 +1,9 @@
+{
+    "store": {
+        "name": "Papa's Pizza",
+        "rating": 5,
+        "reviews": 358,
+        "status": "Open",
+        "deliveryTime": "25 Mins"
+    }
+}

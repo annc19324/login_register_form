@@ -8,6 +8,8 @@ import NavigationBar from './NavigationBar';
 import NavigationBarWithTransition from './NavigationBarWithTransitionApp';
 import SplittingCodeApp from './SplittingCodeApp';
 import ListViewApp from './MovieExplorerApp';
+import ClockInterfaceApp from './ClockInterfaceApp';
+import PizzaOrderApp from './PizzaOrderApp';
 
 // registerRootComponent calls AppRegistry.registerComponent('main', () => App);
 // It also ensures that whether you load the app in Expo Go or in a native build,
@@ -19,4 +21,6 @@ import ListViewApp from './MovieExplorerApp';
 // registerRootComponent(NavigationBar);
 // registerRootComponent(NavigationBarWithTransition);
 // registerRootComponent(SplittingCodeApp);
-registerRootComponent(ListViewApp);
+// registerRootComponent(ListViewApp);
+// registerRootComponent(ClockInterfaceApp);
+registerRootComponent(PizzaOrderApp);

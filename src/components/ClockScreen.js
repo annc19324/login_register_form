@@ -37,7 +37,6 @@ const ClockScreen = () => {
 
     return (
         <View style={styles.container}>
-            {/* Clock display */}
             <View style={styles.clockContainer}>
                 <View style={styles.clockFace}>
                     <Text style={styles.timeText}>{formatTime(time)}</Text>
@@ -45,7 +44,6 @@ const ClockScreen = () => {
                 </View>
             </View>
 
-            {/* Time zone section */}
             <View style={styles.timeZones}>
                 {getTimeZones().map((zone, index) => {
                     const cityTime = getCityTime(zone.offset);

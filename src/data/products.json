@@ -1,0 +1,106 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "category": "Pizza",
+            "name": "Kimchi BBQ Chicken",
+            "description": "Kimchi, BBQ Chicken, Mozzarella Cheese",
+            "image": "kimchi_bbq_chicken.jpg",
+            "options": [
+                {
+                    "size": "Small",
+                    "diameter": "9.5\"",
+                    "price": 10.99
+                },
+                {
+                    "size": "Medium",
+                    "diameter": "11.5\"",
+                    "price": 15.99
+                },
+                {
+                    "size": "Large",
+                    "diameter": "13.5\"",
+                    "price": 19.99
+                }
+            ],
+            "addOns": [
+                {
+                    "name": "Extra Cheese",
+                    "price": 1.00
+                },
+                {
+                    "name": "Chicken",
+                    "price": 1.00
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "category": "Pizza",
+            "name": "Peri-Peri",
+            "description": "Peri-Peri Sauce, Chicken, Peppers, Mozzarella Cheese",
+            "image": "peri_peri.jpg",
+            "options": [
+                {
+                    "size": "Small",
+                    "diameter": "9.5\"",
+                    "price": 10.99
+                },
+                {
+                    "size": "Medium",
+                    "diameter": "11.5\"",
+                    "price": 15.99
+                },
+                {
+                    "size": "Large",
+                    "diameter": "13.5\"",
+                    "price": 19.99
+                }
+            ],
+            "addOns": [
+                {
+                    "name": "Extra Cheese",
+                    "price": 1.00
+                },
+                {
+                    "name": "Chicken",
+                    "price": 1.00
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "category": "Pizza",
+            "name": "Italian Supreme",
+            "description": "Pizza Sauce, Tomato, Green Pepper, Black Olives, Beef Pepperoni, Parsley, Sun Dried Tomato, Mozzarella Cheese",
+            "image": "italian_supreme.jpg",
+            "options": [
+                {
+                    "size": "Small",
+                    "diameter": "9.5\"",
+                    "price": 10.99
+                },
+                {
+                    "size": "Medium",
+                    "diameter": "11.5\"",
+                    "price": 15.99
+                },
+                {
+                    "size": "Large",
+                    "diameter": "13.5\"",
+                    "price": 19.99
+                }
+            ],
+            "addOns": [
+                {
+                    "name": "Extra Cheese",
+                    "price": 1.00
+                },
+                {
+                    "name": "Chicken",
+                    "price": 1.00
+                }
+            ]
+        }
+    ]
+}
